@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    cursor: url('../pics/circle-41666 1.svg'), auto;
+    overflow-x: hidden;
+    background: linear-gradient(Black, rgb(0, 0, 0))
+}
+
+header {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+header ul {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+header ul li {
+
+    list-style-type: none;
+    margin-left: 20px;
+}
+header ul li a {
+
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+header ul li a:hover
+{
+
+    background: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+}
+
+section  {
+position: relative;
+width: 100%;
+height: 100vh;
+padding: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+
+}
+section::before {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(0, 0, 0),rgba(0, 0, 0, 0.301),transparent);
+    z-index: 1000;
+    
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section img#Sun{
+    mix-blend-mode:hard-light;
+}
+
+#text {
+
+position: absolute;
+color: rgba(0, 0, 0, 0.466);
+white-space: nowrap;
+font-size: 7.5vw;
+z-index: 9;
+
+}
+#btn {
+
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;   
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.829);
+    color: rgba(248, 147, 14, 0.808);
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(180px);
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: rgb(0, 0, 0);
+}
+.sec h2 {
+
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    color: white;
+}
+.sec p {
+
+    color: white ;
+    font-size: 1.5em;
+}
+.cop{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 1.6em;
+    padding-top: 1.6em;
+}
+.footer-container {
+    background: rgba(43, 43, 43, 0.281);
+    color: rgb(253, 251, 251);   
+    height: 300px;
+    padding: 4rem 0 8rem 0;
+    
+}
+
+.footer {
+
+    width: 80%;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.footer-heading {
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 7rem;
+}
+
+.footer-heading h3 {
+    margin-bottom: 2rem;
+
+}
+
+.footer-heading a {
+
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+
+    color:orange  ;
+    transition: 0.4s;
+}
+
+.footer-email-form h3 {
+
+    margin-bottom: 2rem;
+}
+
+#footer-email {
+
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline:none;
+    border: none;
+    padding-left: 0.5rem;
+}
+
+#footer-email-btn {
+    height: 3.2em;
+    width: 5em;
+    color: black;
+    background-color: red;
+    border-radius: 7px;
+    border: none;
+    
+}
+#footer-email-btn:hover {
+
+    cursor: pointer;
+    background-color: orange;
+    transition: all 0.4s ease-out;
+}
